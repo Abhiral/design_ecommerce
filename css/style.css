@@ -4,6 +4,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background-color: #f1f3f6;
     display: flex;
     flex-direction: column;
@@ -1632,10 +1633,19 @@ li.media {
     color: #555;
 }
 
-.terms-conditions li, .terms-conditions p, .contact-page label, .contact-page p{
+.terms-conditions ol{
+    padding-left: 1rem;
+}
+
+.terms-conditions li, .terms-conditions p, .contact-page label{
     font-size: 15px;
     color: #757575;
     text-align: justify;
+}
+
+.contact-page p{
+    font-size: 15px;
+    color: #757575;
 }
 
 .terms-conditions .heading-title, .faq .heading-title, .about-page .heading-title{
@@ -1848,6 +1858,17 @@ li.media {
 }
 
 
+@media (min-width: 1200px) {
+    .banner-section1 .promo-banner-inner > div + div {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1199px){
+    .wishlist-table .product-description{
+        padding: 0 20px;
+    }
+}
 
 
 @media (max-width: 1024px){
@@ -1899,12 +1920,17 @@ li.media {
     #right-column{
         display: none;
     }    
+    
 }
 
 @media (max-width: 1399px) and (min-width: 1200px){
     #exzoom {
         width: 315px;
         /* height: 315px; */
+    }
+
+    .wishlist-table .product-description {
+        padding: 10px 40px;
     }
 }
 
@@ -1981,6 +2007,27 @@ li.media {
     #content-wrapper{
         margin-top: 30px;
     }
+
+    .wishlist-table .product-image-wrapper {
+        width: 22%;
+    }
+
+    .order-table table {
+        width: 70%;
+    }
+
+    .shopping-cart-summary{
+        margin-top: 30px;
+    }
+
+    .shopping-cart-page {
+        padding: 20px;
+    }
+
+    .shopping-cart-page .payment-btn{
+        width: 230px;   
+        float: right;
+    }
 }
 
 @media (max-width: 767px){
@@ -2013,17 +2060,67 @@ li.media {
     .product-info {
         padding-top: 15px;
     }
+
+    .error-page .search-box{
+        max-width: 350px;
+    }
+
+    .error-page .search-box .search-widget{
+        min-width: 350px;
+    }
+
+    .error-page h1{
+        font-size: 135px;
+    }
+
+    .error-page p, .error-page a{
+        font-size: 14px;
+    }
+
+    .wishlist-table table tr td, .about-page, .faq-page, .contact-page, .login-page, .order-page, .my-wishlist-page, .register-page, .shopping-cart-page, .terms-conditions-page {
+        padding: 10px;
+    }
+    .wishlist-table .product-description {
+        padding: 0 10px;
+    }
+
+    #products .product-price-and-shipping, .featured-products .product-price-and-shipping, .product-accessories .product-price-and-shipping, .product-price-and-shipping{
+        margin-top: 4px;
+    }
+
+    .order-table table {
+        width: 85%;
+    }
+
+    .order-table{
+        padding: 0;
+    }
+
+    .shopping-cart-page .cart-table{
+        overflow-x: auto;
+    }
+    
+    .cart-table table{
+        min-width: 700px;           
+    }
 }
 
 @media (max-width: 575px){
-
-}
-
-@media (min-width: 1200px) {
-    .banner-section1 .promo-banner-inner > div + div {
-        margin-top: 30px;
+    .order-table table {
+        width: 100%;
     }
+
+    .back-to-shop, .shopping-cart-page .payment-btn{
+        width: 170px;
+    }
+
+    .back-to-shop .back-to-shop-btn{
+        font-size: 13px;
+    }
+
 }
+
+
 
 @media (min-width: 992px){
     .header-top-text .row div > div + div {
@@ -2131,6 +2228,37 @@ li.media {
         padding: 7px;
     }
 
+    .error-page .search-box{
+        max-width: 250px;
+    }
+
+    .error-page .search-box .search-widget{
+        min-width: 250px;
+    }
+
+    .error-page h1{
+        font-size: 80px;
+    }
+
+    .error-page p, .error-page a{
+        font-size: 12px;
+    }
+
+    .wishlist-table .product-image-wrapper{
+        display: none;    
+    }
+
+    .wishlist-table .product-description{
+        padding: 0;
+    }
+
+    .wishlist-table table tr td {
+        padding: 10px 0;
+    }
+
+    .wishlist-table .cart-btn {
+        width: 100px;
+    }
     
 }
 
@@ -2155,6 +2283,14 @@ li.media {
     #exzoom {
         width: 282px!important;
         /* height: 282px; */
+    }
+
+    .error-page .search-box{
+        max-width: 200px;
+    }
+
+    .error-page .search-box .search-widget{
+        min-width: 200px;
     }
 }
 
