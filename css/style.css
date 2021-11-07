@@ -45,7 +45,7 @@ main{
     display: flex;
 }
 
-.header-top-text .col-md-5{
+.header-top-text .col-md-6{
     justify-content: flex-end;
 }
 
@@ -1756,6 +1756,16 @@ li.media {
     }
 }
 
+@media (min-width: 1400px){
+    .container {
+        max-width: 1400px;
+    }   
+    
+    #left-column .offer-section, #left-column .promo-box-section, #left-column .email_subscription{
+        display: none;
+    }
+}
+
 @media (max-width: 1750px) and (min-width: 1441px){
     #left-column, #right-column {
         width: 21%;
@@ -1827,7 +1837,18 @@ li.media {
     .menu-content .menu-item .dropdown-menu{
         inset: 0px auto auto 318px!important;
     }
+
+    #exzoom {
+        width: 250px;
+        /* height: 250px; */
+    }
+    .rate-product .fa {
+        font-size: 30px;
+    }
 }
+
+
+
 
 @media (max-width: 1024px){
     .search-widget{
@@ -1871,6 +1892,19 @@ li.media {
 
     .banner-section{
         display: none;
+    }
+}
+
+@media (max-width: 1399px) and (min-width: 992px){
+    #right-column{
+        display: none;
+    }    
+}
+
+@media (max-width: 1399px) and (min-width: 1200px){
+    #exzoom {
+        width: 315px;
+        /* height: 315px; */
     }
 }
 
@@ -1935,6 +1969,18 @@ li.media {
     .offer-section .carousel-control-next, .offer-section .carousel-control-prev {
         top: -40px!important;
     }
+
+    .currency, .language{
+        margin-right: 15px;
+    }
+
+    #right-column .offer-section, #left-column .block_newsletter{
+        display: none;
+    }
+
+    #content-wrapper{
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 767px){
@@ -1957,7 +2003,16 @@ li.media {
     .site-info span .fa {
         padding: 5px;
         font-size: 16px;
-    }    
+    }  
+    
+    #exzoom {
+        width: 300px!important;
+        /* height: 300px; */
+    }
+
+    .product-info {
+        padding-top: 15px;
+    }
 }
 
 @media (max-width: 575px){
@@ -2009,34 +2064,98 @@ li.media {
         width: 61%;
         float: left;
     }
+
+    .rating-bar {
+        width: 150px;
+    }
+
+    .review-block .grid-reviews .bar1 {
+        width: 150px;
+    }
+
+    .review-block .grid-reviews  .bar2{
+        width: 120px;    
+    }
+    
+    .review-block .grid-reviews  .bar3{
+        width: 90px;   
+    }
+    
+    .review-block .grid-reviews  .bar4{
+        width: 60px;  
+    }
+    
+    .review-block .grid-reviews  .bar5{
+        width: 30px;  
+    }
+
+    .product-info .price-container .price{
+        font-size: 20px;
+    }
+
+    .product-info .price-container .price-box .price-strike{
+        font-size: 12px;
+    }
+
+    .prdouct-btn-wrapper div a{
+        width: 27px;
+        height: 27px;
+    }
+
+    .prdouct-btn-wrapper div i {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .btn, input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], select{
+        padding: 4px;
+    }
+
+    .cart-btn, .register-btn, .payment-btn, .order-delivery-btn, .review-count a, .rating-count, .reviewer{
+        font-size: 13px;
+    }
+
+    .name{
+        font-size: 22px;
+    }
+
+    .product-info p, p, .reviewer span{
+        font-size: 14px;
+    }
+
+    .rating-head{
+        font-size: 15px;
+    }
+
+    .promo-box-inner, .detail-block{
+        padding: 7px;
+    }
+
+    
 }
 
 
-
-/* @media (min-width: 1360px){
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1360px;
+@media (max-width: 375px){
+    .currency, .language {
+        margin-right: 9px;
     }
 
-    .my-4 .controls-top .right-arrow{
-        margin-left: 1222px;
+    .cart-title .cart{
+        display: none;
     }
-}*/
 
-@media (min-width: 1400px){
-    .container {
-        max-width: 1400px;
+    
+}
+
+@media (max-width: 320px){
+    .price-container .row div{
+        padding-right: 0;
+    }
+
+    #exzoom {
+        width: 282px!important;
+        /* height: 282px; */
     }
 }
 
-/* @media (min-width: 1600px){
-    .container {
-        max-width: 1600px;
-    }
-}
 
-@media (min-width: 1800px){
-    .container {
-        max-width: 1800px;
-    }
-}  */
